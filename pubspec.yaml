@@ -1,0 +1,11 @@
+name: contacts_list
+version: 0.1.1
+author: Thomas Chabot <thomas.chabot.1@gmail.com>
+description: Exercice 8, contacts list with polymer library
+dependencies:
+  dartlero:
+    git: git://github.com/dzenanr/dartlero.git
+  polymer: any
+transformers:
+- polymer:
+    entry_points: web/contacts_list.html

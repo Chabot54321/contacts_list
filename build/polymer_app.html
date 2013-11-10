@@ -1,0 +1,26 @@
+<polymer-element name="polymer-app">
+  <link rel="import" href="component/contact/category_table.html">
+  <template>
+    <style>
+      button {
+        padding: 1px;
+        
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        border-style: outset;
+        
+        font-weight: bold;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    </style>
+    <button on-click="{{save}}">Save</button>
+    <category-table id="category-table" 
+      contacts="{{contacts}}"
+    >
+    </category-table>
+  </template>
+  <script type="application/dart" src="polymer_app.dart"></script>
+</polymer-element>
